@@ -19,3 +19,4 @@ You are to build out a table that is able to sort in ascending and descending or
 - Be sure to test everything for this.
 - Vanilla JS
 - Desktop Build for this application.
+
