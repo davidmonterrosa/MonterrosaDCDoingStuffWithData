@@ -541,6 +541,15 @@
   .ms-1\.5 {
     margin-inline-start: calc(var(--spacing) * 1.5);
   }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-24 {
+    margin-top: calc(var(--spacing) * 24);
+  }
   .ml-0 {
     margin-left: calc(var(--spacing) * 0);
   }
@@ -609,6 +618,9 @@
       margin-inline-end: calc(-1px * calc(1 - var(--tw-space-x-reverse)));
     }
   }
+  .place-self-end {
+    place-self: end;
+  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -637,53 +649,23 @@
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
-  .bg-\[url\] {
-    background-color: url;
-  }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
-  }
-  .bg-cyan-300 {
-    background-color: var(--color-cyan-300);
-  }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
   }
   .bg-gray-800 {
     background-color: var(--color-gray-800);
   }
-  .bg-red-300 {
-    background-color: var(--color-red-300);
-  }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .bg-\[url\(\)\] {
-    background-image: url();
-  }
-  .bg-\[url\(\.\)\] {
-    background-image: url(.);
-  }
-  .bg-\[url\(\.\/assets\/\)\] {
-    background-image: url(./assets/);
-  }
-  .bg-\[url\(\.\/assets\/data\)\] {
-    background-image: url(./assets/data);
-  }
-  .bg-\[url\(\.\/assets\/dataWeb\)\] {
-    background-image: url(./assets/dataWeb);
-  }
-  .bg-\[url\(\.\/assets\/dataWebVidualizer\.\)\] {
-    background-image: url(./assets/dataWebVidualizer.);
   }
   .bg-\[url\(\.\/assets\/dataWebVidualizer\.jpg\)\] {
     background-image: url(./assets/dataWebVidualizer.jpg);
   }
-  .bg-\[url\(\.\/assets\/dataWebVisualizer\.jpg\)\] {
-    background-image: url(./assets/dataWebVisualizer.jpg);
+  .bg-\[url\(\/assets\/dataWebVidualizer\.jpg\)\] {
+    background-image: url(/assets/dataWebVidualizer.jpg);
   }
-  .bg-\[url\(\.\/assets\/dataWebVisualizerjpg\)\] {
-    background-image: url(./assets/dataWebVisualizerjpg);
+  .bg-\[url\(\/assets\/dataWebVisualizer\.jpg\)\] {
+    background-image: url(/assets/dataWebVisualizer.jpg);
   }
   .bg-cover {
     background-size: cover;
@@ -754,6 +736,9 @@
   .whitespace-nowrap {
     white-space: nowrap;
   }
+  .text-blue-400 {
+    color: var(--color-blue-400);
+  }
   .text-gray-500 {
     color: var(--color-gray-500);
   }
@@ -766,9 +751,22 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .underline-offset-1 {
+    text-underline-offset: 1px;
+  }
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .hover\:cursor-pointer {
+    &:hover {
+      @media (hover: hover) {
+        cursor: pointer;
+      }
+    }
   }
   .hover\:bg-gray-100 {
     &:hover {
@@ -781,6 +779,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-gray-700);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
       }
     }
   }
