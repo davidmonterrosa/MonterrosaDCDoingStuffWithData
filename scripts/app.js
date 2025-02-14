@@ -180,36 +180,36 @@ function showLimitedValues(arr) {
 
 
 /* 
-    <ul class="inline-flex items-stretch -space-x-px">
-        <li>
-            <button id="previousBtn"
-                class="flex items-center justify-center h-full py-1.5 px-3 ml-0 text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700   dark:hover:bg-gray-700 dark:hover:text-white">
-                <span class="text-gray-700">Previous</span>
-            </button>
-        </li>
-        <li>
-            <button
-                class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700   dark:hover:bg-gray-700 dark:hover:text-white">1</a>
-        </li>
-        <li>
-            <button aria-current="page"
-                class="flex items-center justify-center text-sm z-10 py-2 px-3 leading-tight border hover:bg-gray-400 hover:text-white border-gray-700 bg-gray-700 ">3</a>
-        </li>
-        <li>
-            <button id="nextBtn"
-                class="flex items-center justify-center h-full py-1.5 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700   dark:hover:bg-gray-700 dark:hover:text-white">
-                <span class="text-gray-700">Next</span>
-            </button>
-        </li>
-    </ul>
+    <li>
+        <button id="previousBtn"
+            class="flex items-center justify-center h-full py-1.5 px-3 ml-0 text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700   dark:hover:bg-gray-700 dark:hover:text-white">
+            <span class="text-gray-700">Previous</span>
+        </button>
+    </li>
+    <li>
+        <button
+            class="flex items-center justify-center text-sm py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700   dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+    </li>
+    <li>
+        <button aria-current="page"
+            class="flex items-center justify-center text-sm z-10 py-2 px-3 leading-tight border hover:bg-gray-400 hover:text-white border-gray-700 bg-gray-700 ">3</a>
+    </li>
+    <li>
+        <button id="nextBtn"
+            class="flex items-center justify-center h-full py-1.5 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700   dark:hover:bg-gray-700 dark:hover:text-white">
+            <span class="text-gray-700">Next</span>
+        </button>
+    </li>
+    
 */
-function getPages(arr) {
-    const pageCount = Math.ceil(arr.length / entriesPerPageValue);
-    pagesList.innerHTML = "";
-    for (let i = 1; i <= pageCount; i++) {
-        
-    }
-}
+// function getPages(arr) {
+//     const pageCount = Math.ceil(arr.length / entriesPerPageValue);
+//     pagesList.innerHTML = "";
+
+//     for (let i = 1; i <= pageCount; i++) {
+
+//     }
+// }
 
 entriesPerPage.addEventListener("change", () => {
     entriesPerPageValue = entriesPerPage.value;
